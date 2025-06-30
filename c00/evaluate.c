@@ -34,10 +34,10 @@ int	main(void)
 	ft_is_negative(nl);
 
 	printf("\n---testing ex05---\n");
-//	ft_print_comb();
+	ft_print_comb();
 
 	printf("\n---testing ex06---\n");
-//	ft_print_comb2();
+	ft_print_comb2();
 
 	printf("\n---testing ex07---\n");
 	int test1 = 2147483647;
@@ -55,7 +55,7 @@ int	main(void)
 
 	printf("---testing ex08--- \n");
 	ft_print_combn(2);
-
-
+	printf("\n");
+	ft_print_combn(3);
 }
 

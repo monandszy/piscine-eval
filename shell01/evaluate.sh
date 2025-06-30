@@ -26,14 +26,14 @@ cd ..
 echo "---3----"
 cd ex03
 cat count_files.sh
-echo "---output for Valid: file1 dir/file2 Invalid: .file3. Count of 5: cd, f1, f2, dir, the script---" 
-touch file1.sh .file3.sh
+echo "---output for Valid: file1 dir/file2. Count of 5: cd, f1, f2, dir, the script---" 
+touch file1.sh
 mkdir dir
 cd dir
 touch file.sh
 cd ..
 sh count_files.sh | cat -e
-rm -rf file1.sh .file3.sh dir
+rm -rf file1.sh dir
 cd ..
 
 echo "---4---"
@@ -64,10 +64,10 @@ cd ..
 echo "---7---"
 cd ex07
 cat r_dwssap.sh
-echo "--- output, first my script without FT_LINE, second yours. Both FT_LINE are set to 3---"
-export FT_LINE1=3
-export FT_LINE2=3
-cat /etc/passwd | sed -n '1~2p' | cut -d: -f1 | rev | sort -r | tr '\n' ',' | sed 's/,/, /g' | sed 's/..$/\n/'
+echo "--- output, first my script runs without FT_LINE, second yours. FT_LINE1=7 FT_LINE2=15 ---"
+export FT_LINE1=7
+export FT_LINE2=15
+cat /etc/passwd | grep -v '^#' | sed -n '2~2p' | cut -d':' -f1 | rev | sort -r | tr '\n' ',' | sed 's/,/, /g' | sed 's/..$/./'
 echo "---"
 sh r_dwssap.sh
 cd ..
