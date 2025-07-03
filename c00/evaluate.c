@@ -48,14 +48,21 @@ int	main(void)
 	printf("\n");
 	ft_putnbr(0);
 	printf("\n");
+	ft_putnbr(100100100);
+	printf("\n");
 	ft_putnbr(2147483648);
 	printf("\n");
 	ft_putnbr(-2147483648);
 	printf("\n");
+	ft_putnbr(00000000000);
 
 	printf("---testing ex08--- \n");
 	ft_print_combn(2);
 	printf("\n");
 	ft_print_combn(3);
+	printf("\n");
+	ft_print_combn(0);
+	printf("\n");
+	ft_print_combn(9);
 }
 
