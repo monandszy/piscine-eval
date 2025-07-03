@@ -30,8 +30,8 @@ norminette -R CheckForbiddenSourceHeader
 rm -rf ex04.o
 cd ..
 
-cd ex05
-cc -c -Wall -Wextra -Werror ft_putstr.c -o ex05
+ cd ex05
+cc -c -Wall -Wextra -Werror ft_putstr.c -o ex05.o
 norminette -R CheckForbiddenSourceHeader
 rm -rf ex05.o
 cd ..
