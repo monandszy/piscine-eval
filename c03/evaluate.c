@@ -32,6 +32,7 @@ int	main(void)
 	printf("%d", strcmp("cat", "Cat"));
 	printf("%d", strcmp("C", "cat"));
 	printf("%d", strcmp("cat", "C"));
+	printf("%d", strcmp("", ""));
 
 	printf("\ntesting ex01\n");
 	printf("%d", ft_strncmp("cat", "cat", 3));
@@ -111,6 +112,15 @@ int	main(void)
 	
 	printf("\n");
 	print_arr(strstr(haystack5, needle5));
+	printf("\n");
+
+
+	char haystack6[] = "all1catnipinapot";
+	char needle6[] = "catnipinapot";
+	print_arr(ft_strstr(haystack6, needle6));
+	
+	printf("\n");
+	print_arr(strstr(haystack6, needle6));
 	printf("\n");
 
 
