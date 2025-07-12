@@ -66,6 +66,7 @@ int	main(void)
 	printf("%d|", ft_is_prime(0));
 	printf("%d|", ft_is_prime(1));
 	printf("%d|", ft_is_prime(2));
+	printf("%d|", ft_is_prime(4));
 	printf("%d|", ft_is_prime(6));
 	printf("%d|", ft_is_prime(41));
 
@@ -74,11 +75,12 @@ int	main(void)
 	printf("%d|", ft_find_next_prime(0));
 	printf("%d|", ft_find_next_prime(1));
 	printf("%d|", ft_find_next_prime(2));
+	printf("%d|", ft_find_next_prime(4));
 	printf("%d|", ft_find_next_prime(7));
 	printf("%d|", ft_find_next_prime(8));
 	printf("%d|", ft_find_next_prime(1200));
 
 	printf("\n---testing ex08\n");
-//	printf("%d|", ft_ten_queens_puzzle());
+	printf("%d|", ft_ten_queens_puzzle());
 	return (0);
 }
