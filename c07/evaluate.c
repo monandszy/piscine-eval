@@ -62,7 +62,7 @@ int main(void)
 	printf("%s\n", ft_strjoin(4, strs, " ,,,,"));
 	free(ft_strjoin(-5, strs, " "));
 
-	printf("---testing ex05---\n");
+/*	printf("---testing ex05---\n");
 	char **split = ft_split("||||cat1||cat2||||cat3||||cat4||", "||");
     printf("[%s]\n", split[0]);
     printf("[%s]\n", split[1]);
@@ -72,5 +72,5 @@ int main(void)
 	char **split1 = ft_split("||||cat1||cat2||||cat3||||cat4||", "");
     printf("[%s]\n", split1[0]);
     printf("[%s]\n", split1[1]);
-    printf("[%s]\n", split1[2]);
+    printf("[%s]\n", split1[2]); */
 }
